@@ -10,28 +10,61 @@ const Home: NextPage = () => {
   return (
     <Parallax ref={parallax} pages={3}>
       <ParallaxLayer offset={0} style={{ backgroundColor: "#ffffff" }} />
+      <ParallaxLayer offset={1} style={{ backgroundColor: "#ffffff" }} />
+      <ParallaxLayer offset={2} style={{ backgroundColor: "#ffffff" }} />
 
-      <ParallaxLayer style={{ marginLeft: "20%", maxWidth: 450 }} offset={0.25} speed={-0.3}>
+      <ParallaxLayer
+        style={{ marginLeft: "20%", maxWidth: 450 }}
+        offset={0.3}
+        speed={0.15}
+      >
         <h1 className="text-3xl text-black font-bold">
           Le J&apos; là một quán cà phê.
         </h1>
       </ParallaxLayer>
 
-      <ParallaxLayer style={{ marginLeft: "20%", maxWidth: 450 }} offset={0.35} speed={-0.2}>
+      <ParallaxLayer
+        style={{ marginLeft: "20%", maxWidth: 450 }}
+        offset={0.45}
+        speed={0.2}
+      >
         <h1 className="text-2xl text-black font-bold">
-          Bên cạnh đó, Le J&apos; còn như là một chốn trú ẩn thân thuộc, một nơi đủ
-          yên tĩnh<br></br> để tập trung làm việc, và là một mái hiên<br></br> đầy nắng để thả
-          trôi những xúc cảm đời thường.
+          Bên cạnh đó, Le J&apos; còn như là một chốn trú ẩn thân thuộc, một nơi
+          đủ yên tĩnh<br></br> để tập trung làm việc, và là một mái hiên
+          <br></br> đầy nắng để thả trôi những xúc cảm đời thường.
         </h1>
       </ParallaxLayer>
 
-      <ParallaxLayer style={{ marginLeft: "55%" }} offset={0.2} speed={0.1}>
+      <ParallaxLayer style={{ marginLeft: "55%" }} offset={0.2} speed={0.3}>
         <Image
           alt="coffee-cup"
           src="/images/coffee-cup.jpeg"
           layout="intrinsic"
           width={400}
-          height={475}
+          height={525}
+        />
+      </ParallaxLayer>
+
+      {/* PAGE 2 */}
+      <ParallaxLayer
+        style={{ marginLeft: "55%", maxWidth: 400 }}
+        offset={1.25}
+        speed={0.1}
+      >
+        <h1 className="text-2xl text-black font-bold">
+          Ngoài ra, bọn mình có những buổi workshop về cà phê, để chia sẻ về
+          hành trình của bọn mình với thứ thức uống này, rằng nó có thể xa đến
+          đâu, và nhiều hương vị đến thế nào.
+        </h1>
+      </ParallaxLayer>
+
+      <ParallaxLayer style={{ marginLeft: "15%" }} offset={1.1} speed={0.3}>
+        <Image
+          alt="coffee-cup"
+          src="/images/competition.jpeg"
+          layout="intrinsic"
+          width={400}
+          height={555}
         />
       </ParallaxLayer>
     </Parallax>
