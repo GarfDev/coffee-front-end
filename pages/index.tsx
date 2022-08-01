@@ -51,10 +51,9 @@ const Home: NextPage = () => {
         offset={1.25}
         speed={0.1}
       >
-        <h1 className="text-2xl text-black font-bold">
-          Ngoài ra, bọn mình có những buổi workshop về cà phê, để chia sẻ về
-          hành trình của bọn mình với thứ thức uống này, rằng nó có thể xa đến
-          đâu, và nhiều hương vị đến thế nào.
+        <h1 className="text-3xl text-black font-bold">
+          Ngoài ra, bọn mình còn tổ chức các workshop, với mục đích là chia sẻ
+          nhiều hơn về hành trình cà phê của bọn mình.
         </h1>
       </ParallaxLayer>
 
